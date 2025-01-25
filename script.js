@@ -18,14 +18,14 @@ document.querySelector("#backspace").addEventListener("click", () => {
     lower.textContent = lower.textContent.slice(0, -1);
 });
 
-let first = undefined;
-let second = undefined;
-let operator = undefined;
-
 let plus = (x, y) => x + y;
 let minus = (x, y) => x - y;
 let times = (x, y) => x * y;
 let divide = (x, y) => x / y;
+
+let first = undefined;
+let second = undefined;
+let operator = undefined;
 
 document.querySelector("#plus").addEventListener("click", () => {
     first = +lower.textContent;
@@ -68,4 +68,3 @@ document.querySelector("#clear").addEventListener("click", () => {
     lower.textContent = "";
     upper.textContent = "";
 });
-
